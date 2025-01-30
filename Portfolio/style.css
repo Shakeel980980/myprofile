@@ -1,0 +1,590 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --Primary: #e0c097;
+  --black: #2d2424;
+  --secoundary: #b85c38;
+  --hover-card: #5c3d2e;
+}
+
+.dark-theme {
+  --Primary: #ffffff;
+  --black: #020101;
+  --secoundary: #10bfd6;
+  --hover-card: #03494e;
+}
+.main-section {
+  width: 80%;
+  height: 100%;
+  background-color: var(--Primary);
+  margin-left: 10%;
+  font-family: "Poppins", serif;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+/*==========================================
+================= NavBar ==================
+========================================== */
+.nav-div {
+  background-color: var(--black);
+  color: var(--Primary);
+  width: 100%;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo h4 {
+  margin-top: 8px;
+}
+.logo h4 a {
+  text-decoration: none;
+  color: var(--secoundary);
+  padding-left: 10px;
+}
+.logo h4 a:hover {
+  color: var(--Primary);
+  text-shadow: 2px 2px 4px var(--secoundary);
+}
+.Theme-button {
+  font-size: 21px;
+}
+.tabs ul {
+  display: flex;
+  align-items: center;
+  margin-top: 14px;
+}
+.tabs ul li {
+  list-style: none;
+  padding: 1px;
+}
+.tabs ul li a {
+  text-decoration: none;
+  color: var(--Primary);
+  padding: 11px;
+}
+.tabs ul li a.active {
+  background-color: var(--secoundary);
+}
+.tabs ul li a:hover {
+  background-color: var(--secoundary);
+}
+.projects-button {
+  padding-right: 10px;
+}
+.projects-button a {
+  color: var(--background);
+}
+.projects-button a button {
+  background-color: var(--secoundary);
+  font-size: 15px;
+  padding: 5px 17px;
+  border: none;
+  font-weight: bold;
+  color: var(--background);
+  border-radius: 14px;
+}
+.projects-button button:hover {
+  background-color: var(--hover-card);
+  color: var(--secoundary);
+  cursor: pointer;
+  box-shadow: 0px 1px 2px 1px white;
+  transition: background 0.3s;
+}
+.toogle-button {
+  padding-right: 10px;
+  font-size: 25px;
+  color: var(--secoundary);
+  display: none;
+}
+.crossBtn {
+  padding-right: 10px;
+  font-size: 25px;
+  color: var(--secoundary);
+  display: none;
+}
+.toogle-button:hover {
+  color: var(--Primary);
+  text-shadow: 2px 2px 4px var(--secoundary);
+}
+.crossBtn:hover {
+  color: var(--Primary);
+  text-shadow: 2px 2px 4px var(--secoundary);
+}
+/* Responsive navbar start */
+@media screen and (max-width: 1070px) {
+  .projects-button {
+    display: none;
+  }
+}
+@media screen and (max-width: 950px) {
+  .tabs {
+    position: absolute;
+    top: 70px;
+    background-color: var(--black);
+    height: 500px;
+    display: none;
+  }
+  .tabs ul {
+    display: block;
+    text-align: center;
+    padding-left: 0px;
+  }
+  .tabs ul li {
+    margin: 30px 60px;
+  }
+  .projects-button {
+    display: block;
+    margin-left: -43px;
+  }
+  .toogle-button {
+    display: block;
+  }
+  /* .crossBtn {
+    display: block;
+  } */
+}
+@media screen and (max-width: 550px) {
+  .projects-button {
+    position: absolute;
+    top: 400px;
+    left: 120px;
+    margin-top: 60px;
+    display: none;
+  }
+}
+.active {
+  display: block;
+  transition: all 0.5s ease-in-out;
+}
+/* Responsive navbar End */
+
+/*==========================================
+==================About Us==================
+========================================== */
+.headings {
+  margin: 10px 0px 10px 10px;
+  color: var(--black);
+}
+.about-us {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 20px 0px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--secoundary);
+  flex-wrap: wrap;
+}
+.about-left {
+  border: 2px solid var(--black);
+  padding: 30px 10px;
+  margin: 90px;
+}
+.about-left p b a {
+  color: var(--hover-card);
+}
+.about-left:hover {
+  box-shadow: 0px -15px 10px -10px var(--black, 0.45),
+    15px 0px 10px -10px var(--black, 0.45),
+    0px 15px 10px -10px var(--black, 0.45),
+    -15px 0px 10px -10px var(--black, 0.45);
+}
+.title {
+  color: var(--hover-card);
+  font-size: 18px;
+}
+.social-media-icon a {
+  color: var(--black);
+  font-size: 22px;
+}
+.social-media-icon a:hover {
+  opacity: 0.7;
+}
+
+.about-button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: var(--Primary);
+  background-color: var(--black);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.about-button:hover {
+  opacity: 0.7;
+}
+.about-right {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+
+  box-shadow: 0px -15px 10px -10px var(--black, 0.45),
+    15px 0px 10px -10px var(--black, 0.45),
+    0px 15px 10px -10px var(--black, 0.45),
+    -15px 0px 10px -10px var(--black, 0.45);
+}
+@media screen and (max-width: 550px) {
+  .about-left {
+    margin: 30px;
+  }
+  .about-right {
+    margin-bottom: 0px;
+    margin: 10px;
+
+    /* box-shadow: 0px -15px 10px -10px var(--black, 0.45),
+      15px 0px 10px -10px var(--black, 0.45),
+      0px 15px 10px -10px var(--black, 0.45),
+      -15px 0px 10px -10px var(--black, 0.45); */
+  }
+}
+
+/*==========================================
+===============Personal Skills=============
+========================================== */
+
+.cards {
+  background-color: var(--black);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card {
+  background-color: var(--hover-card);
+  width: 280px;
+  height: 400px;
+  margin-right: 0px;
+  color: var(--Primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-container {
+  padding: 30px;
+}
+.card:hover {
+  box-shadow: 0px -15px 10px -10px var(--Primary, 0.45),
+    15px 0px 10px -10px var(--Primary, 0.45),
+    0px 15px 10px -10px var(--Primary, 0.45),
+    -15px 0px 10px -10px var(--Primary, 0.45);
+}
+.card-logo {
+  font-size: 100px;
+  color: var(--secoundary);
+}
+.container-skill {
+  width: 90%;
+  background-color: var(--Primary);
+}
+.card-body {
+  text-align: center;
+}
+.skills {
+  text-align: right;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  color: var(--Primary);
+}
+.html {
+  width: 90%;
+  background-color: var(--secoundary);
+}
+@media screen and (max-width: 550px) {
+  .card-container {
+    padding: 10px 0px;
+  }
+  .card {
+    width: 260px;
+    height: 380px;
+  }
+}
+
+/*==========================================
+================ Projects ==================
+========================================== */
+.projects {
+  width: 100%;
+  background-color: var(--secoundary);
+}
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  padding: 80px 0px 80px 0px;
+}
+.proj p {
+  max-width: 80vmin;
+}
+.left img {
+  width: 400px;
+}
+.proj a button {
+  background-color: var(--black);
+  color: var(--Primary);
+  border: none;
+  padding: 10px 20px;
+}
+.proj a button:hover {
+  background-color: var(--hover-card);
+  color: var(--secoundary);
+}
+.proj b i {
+  color: var(--Primary);
+}
+
+@media screen and (max-width: 360px) {
+  .project-container {
+    padding-top: 10px;
+  }
+  .left img {
+    width: 200px;
+    padding-top: 10px;
+  }
+}
+/*==========================================
+===============Contact us==================
+========================================== */
+.contact-us {
+  width: 100%;
+  background-color: var(--black);
+  color: var(--Primary);
+}
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0px;
+}
+.form-group input {
+  width: 400px;
+  background-color: var(--black);
+  color: var(--secoundary);
+}
+.form-control::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--secoundary);
+  opacity: 0.5; /* Firefox */
+}
+
+.form-group textarea {
+  width: 400px;
+  background-color: var(--black);
+  color: var(--secoundary);
+}
+.contact-form form button {
+  background-color: var(--secoundary);
+  width: 50%;
+  margin-left: 25%;
+}
+.contact-form form button:hover {
+  background-color: var(--Primary);
+  color: var(--secoundary);
+  font-weight: bold;
+}
+@media screen and (max-width: 530px) {
+  .contact-container {
+    margin: 0px 20px;
+  }
+  .form-group input {
+    width: 100%;
+  }
+  .form-group textarea {
+    width: 100%;
+  }
+}
+/*==========================================
+===============Testiominals================
+========================================== */
+.Testominals {
+  width: 100%;
+  background-color: var(--secoundary);
+  color: var(--black);
+}
+.slider {
+  padding: 130px 0px;
+}
+.swiper {
+  width: 80%;
+  height: 300px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 30px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 20px;
+}
+.container h5 {
+  font-weight: bold;
+  color: var(--black);
+}
+.container h6 {
+  font-weight: bold;
+  color: var(--black);
+}
+.container p {
+  background-color: var(--black);
+  color: var(--Primary);
+  padding: 10px;
+  border-radius: 14px;
+}
+.pagination-buttons div {
+  color: var(--black);
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--black);
+}
+.slider .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+}
+@media screen and (max-width: 480px) {
+  .slider {
+    padding: 50px 0px;
+  }
+  .swiper-slide {
+    padding: 0px 2px;
+    height: 500px;
+  }
+}
+/*==========================================
+===================Footer====================
+========================================== */
+.footer-outer-contianer {
+  background-color: var(--black);
+  color: var(--Primary);
+}
+.footer-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  padding: 50px 0px;
+  align-items: baseline;
+}
+.footer-tabs ul {
+  display: flex;
+  text-align: center;
+}
+.footer-tabs ul li {
+  padding: 5px 10px;
+}
+.footer-tabs ul li,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: var(--secoundary);
+}
+.footer-tabs ul li a:hover {
+  color: var(--Primary);
+}
+
+.left-footer div a {
+  color: var(--Primary);
+}
+@media screen and (max-width: 950px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-tabs ul li {
+    padding-left: 0px;
+  }
+}
+
+/*==========================================
+===============Scroll Buttons===============
+========================================== */
+.scroll-to-top {
+  position: absolute;
+  bottom: 10px;
+  right: 12%;
+  position: fixed;
+  z-index: 1;
+  display: none;
+}
+.scroll-to-top button {
+  background-color: var(--hover-card);
+  color: var(--secoundary);
+  padding: 5px 10px;
+  border-radius: 50%;
+  border: 2px dotted var(--Primary);
+}
+.scroll-to-top button:hover {
+  background-color: var(--black);
+}
+/*==========================================
+===============Toggle Buttons===============
+========================================== */
+.toggle-on {
+  display: none;
+}
+/*==========================================
+===============learn more page===============
+========================================== */
+.learn-page-btns {
+  width: 60%;
+}
+.nav-item {
+  font-size: 15px !important;
+  font-weight: bold;
+}
+.nav-tabs {
+  border: none !important;
+  padding: 10px;
+}
+.nav-link {
+  color: var(--black);
+}
+.nav-link:hover {
+  color: var(--black);
+  border: none !important;
+}
+.nav-tabs .nav-link.active {
+  background-image: linear-gradient(var(--secoundary), var(--Primary));
+  border: none !important;
+  box-shadow: none !important;
+  color: var(--hover-card);
+}
+.tab-content-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin-left: 10%;
+  text-align: justify;
+}
+.tab-content-text h1 {
+  color: var(--black);
+}
+.tab-content-text p {
+  color: var(--hover-card);
+}
+.tab-content-text p b {
+  color: var(--hover-card);
+}

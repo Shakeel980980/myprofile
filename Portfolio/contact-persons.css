@@ -1,0 +1,14 @@
+.contacted-perosns {
+  padding: 20px;
+}
+.li-items-contacted {
+  display: flex;
+}
+
+@media screen and (max-width: 950px) {
+  .li-items-contacted {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
